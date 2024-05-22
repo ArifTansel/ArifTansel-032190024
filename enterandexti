@@ -1,0 +1,15 @@
+class MessageWriter(object):
+    def __init__(self):
+        pass
+     
+    def __enter__(self):
+        xd = "içerdeyim"
+        print("girdim")
+        return xd
+ 
+    def __exit__(self, *args):
+        print("çıktım")
+ 
+
+with MessageWriter() as mynigga :
+    print(mynigga)
